@@ -50,7 +50,7 @@
 
     async function requestWeather(city, unit) {
         try {
-            const res = await fetch(`http://api.openweathermap.org/data/2.5/find?q=${city}&units=${unit}&appid=6b3efa385e129b52753539d9baf13410`);
+            const res = await fetch(`https://api.openweathermap.org/data/2.5/find?q=${city}&units=${unit}&appid=6b3efa385e129b52753539d9baf13410`);
             const data = await res.json();
             console.log(data);
             currentData.cityName = data.list[0].name;
