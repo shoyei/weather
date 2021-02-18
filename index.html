@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style.css' type='text/css' rel='stylesheet'>
+    <title>Weather App</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="titleContainer">
+        <div id='titleCityContainer'>
+            <h1 id='title'>WEATHER TIME</h1>
+            <div id='cityName'></div>
+        </div>
+        
+    </div>
+    <div id="inputContainer">
+        <form id="inputForm">
+            <input type="text" name="city" class="input" id="cityInput" value="CITY..." onClick="this.select();">
+            <input type="submit" id="submitBtn">
+            <div id="unitToggle">
+                <div class="" id="f">°F</div>
+                <div id="c" class="inactive">°C</div>
+            </div>
+        </form>
+        
+    </div>
+    <div id="weatherContainer">
+        <div class = "dataPoint" id="condDesc"></div>
+        <div class = "dataPoint" id="temp"></div>
+        <div class = "dataPoint" id="feelsLike"></div>
+        <div class = "dataPoint" id="todayHigh"></div>
+        <div class = "dataPoint" id="todayLow"></div>
+        <div class = "dataPoint" id="windSpeed"></div>
+        <div class = "dataPoint" id="humidity"></div>
+    </div>
+    <script src='/script.js' type='text/javascript'></script>
+</body>
+
+</html>
